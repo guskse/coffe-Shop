@@ -13,7 +13,6 @@ const tabContentBoxes = document.querySelectorAll("#tab-content > div");
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     tabs.forEach((item) => {
-        
       item.classList.remove("is-active");
 
       tab.classList.add("is-active");
@@ -30,3 +29,17 @@ tabs.forEach((tab) => {
     });
   });
 });
+
+//modal
+const signupButton = document.getElementById("signup");
+const modalBg = document.querySelector(".modal-background");
+const modal = document.querySelector(".modal");
+
+
+signupButton.addEventListener('click', () => {
+  modal.classList.toggle('is-active');
+})
+
+modalBg.addEventListener('click', () => {
+  modal.classList.toggle('is-active');
+})
