@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/coffee-web-icon.png">
+    <title>Coffee with Bulma</title>
+  </head>
+  <body>
+    <!--navbar-->
+
+    <nav class="navbar has-shadow is-white">
+      <!-- is-white da a cor ao navbar-->
+      <!--logo / brand-->
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img
+            src="assets/coffe-logo.jpg"
+            alt="site logo"
+            style="max-height: 120px"
+            class="py-2 px-2"
+          />
+        </a>
+        <a class="navbar-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+          <a class="navbar-item">My Account</a>
+          <a class="navbar-item">Shopping Cart (0)</a>
+        </div>
+      </div>
+    </nav>
+
+    <!--breadcrumbs-->
+    <div class="section pt-4 pb-0">
+      <nav class="breadcrumb has-arrow-separator">
+        <ul class="container is-size-6">
+          <li><a class="has-text-grey">Coffee Products</a></li>
+          <li><a class="has-text-grey">Shop</a></li>
+          <li class="is-active"><a>Docker Dark Roast</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--product info -->
+    <section class="section">
+      <div class="container">
+        <div class="columns is-vcentered is-multiline">
+          <!--vertical centered-->
+          <!--a classe is-numero dita o tamanho da coluna (o máximo da soma tem que dar 12)-->
+          <!-- no caso abaixo (3 + 5 + 4 = 12)-->
+          <div class="column is-6-tablet is-3-desktop">
+            <h1 class="is-size-3-mobile is-size-1-desktop title">Docker</h1>
+            <h2 class="is-size-3-mobile is-size-2-desktop subtitle">
+              Dark Roast
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              voluptatibus maiores accusamus autem mollitia minus, iure atque.
+              Inventore, dolores libero.
+            </p>
+          </div>
+          <div class="column is-6-tablet is-5-desktop">
+            <img
+              src="./assets/product.png"
+              alt="Docker coffee image"
+              class="px-6"
+            />
+          </div>
+          <div class="column is-12-tablet is-4-desktop">
+            <div class="is-size-4 mb-4">$10.99</div>
+            <p class="mb-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero,
+              inventore.
+            </p>
+            <button class="button is-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--tabs-->
+    <section>
+      <div class="container">
+        <div class="columns is-8 is-variable">
+          <div class="column is-7-tablet">
+            <!--tabbed content-->
+            <div class="tabs is-boxed">
+              <ul>
+                <li class="is-active" data-target="product-details">
+                  <a>Product Details</a>
+                </li>
+                <li data-target="delivery-info">
+                  <a>Delivery Info</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-2" id="tab-content">
+              <div id="product-details">
+                <h3 class="is-size-5">Product Details</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Odit, neque. Dolorem sit eum alias exercitationem illo est
+                  maxime? Corporis molestiae architecto inventore unde
+                  voluptatibus et numquam porro nobis dolorem! Magnam?
+                </p>
+              </div>
+              <div id="delivery-info" class="is-hidden">
+                <h3 class="is-size-5">Delivery Information</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Odit, neque. Dolorem sit eum alias exercitationem illo est
+                  maxime? Corporis molestiae architecto inventore unde
+                  voluptatibus et numquam porro nobis dolorem! Magnam?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-5-tablet">
+
+            <!--message box-->
+            <div class="message">
+              <div class="message-header">
+                <p>Earn Points with the Coffee Club</p>
+              </div>
+              <div class="message-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, sequi nam. Quae, hic molestiae! Voluptate
+                  accusamus quibusdam voluptatem sequi pariatur consequuntur,
+                  tempore blanditiis consequatur voluptates amet, aspernatur aut
+                  voluptas ad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
